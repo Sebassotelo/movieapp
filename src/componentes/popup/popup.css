@@ -1,0 +1,11 @@
+.popup{
+    height: 300px;
+    width: 500px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: 200;
+    display: none;
+}

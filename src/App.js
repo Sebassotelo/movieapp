@@ -106,6 +106,18 @@ function App() {
           </button>
         </div>
       </div>
+
+      <div className="footer">
+        <div className="footer__container">
+          <p>
+            Creado por
+            <a href="https://portfolio-tan-delta.vercel.app/" target={"_blank"}>
+              <strong> Sebas Sotelo</strong>
+            </a>
+            . 2022
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

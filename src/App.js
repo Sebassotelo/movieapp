@@ -44,7 +44,7 @@ function App() {
     busquedaOn();
     event.preventDefault();
     const search = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=e8002c635aacc458eb931614052b44af&language=es-MX&query=${input}`
+      `https://api.themoviedb.org/3/search/movie?api_key=e8002c635aacc458eb931614052b44af&language=es-MX&page=${pag}&query=${input}`
     );
     const datosSearch = await search.json();
     console.log(datosSearch.results);
@@ -58,6 +58,8 @@ function App() {
         estreno: pelicula.release_date,
       }))
     );
+
+    setInput("");
   };
 
   const pagSiguiente = () => {
